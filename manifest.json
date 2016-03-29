@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "底部",
+  "version": "0.1.1",
+  "description": "Must turn Codegram team members pics into troll faces.",
+  "content_scripts": [
+    {
+      // Change 'matches' attribute to load content
+      // script only in pages you want to.
+      "matches": ["http://www.timqian.com/*"],
+      "css": ["basic.css"],
+      "js": ["contentscript.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "dog.png"
+  ]
+}
